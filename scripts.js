@@ -27,6 +27,9 @@ async function nactiStatus() {
     console.error("Lanyard nejede:", e);
   }
 }
+nactiStatus();
+setInterval(nactiStatus, 30000);
+
 
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
