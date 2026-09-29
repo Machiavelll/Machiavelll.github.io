@@ -11,7 +11,7 @@ html {
 body {
     height: 100%;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #180538;
+    background-color: transparent;
     color: #8e4dff;
     margin: 0;
     overflow: hidden;
