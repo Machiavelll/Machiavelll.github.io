@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
+html {
+
+    height: 100%;
+    margin: 0;
+    background-color: #180538;
+}
+
 body {
     height: 100%;
     font-family: 'JetBrains Mono', monospace;
@@ -26,7 +33,7 @@ body {
     position: absolute;
     top: 0;
     left: 300px;
-    z-index: -1;
+    z-index: 0;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-animation-duration: 1s;
     writing-mode: vertical-rl;
