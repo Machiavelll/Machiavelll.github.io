@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open index.html with Brave",
+            "file": "/home/machiavelli/Projects/HTML/index.html",
+            "runtimeExecutable": "/usr/bin/brave",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}   

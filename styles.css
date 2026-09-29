@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #180538;
+    color: #8e4dff;
+    overflow: hidden;
+}
+.binary {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    z-index: -1;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-animation-duration: 1s;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    color: white;
+    text-shadow: 0 0 10px #91EDFF;
+}
+
+/*  main color: #180538 
+    second color: #320b75
+    third color: #8e4dff
+*/
+
+.nadpis {
+
+    color: #8e4dff;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    background:linear-gradient(
+        110deg,
+        #8e4dff 40%,
+        #ffffff 50%,
+        #8e4dff 60%
+    );
+
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: lesk 3.5s linear infinite;
+}
+@keyframes lesk {
+    from { background-position: 200% 0;}
+    to { background-position: -200% 0;}
+}
+
+.conteiner {
+
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+
+    box-sizing: border-box;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5865f2;
+}
+
+.avatar-wrap {
+
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.status {
+    
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #80848e;
+    border: 4px solid #180538
+}
+
+#aktivita {
+    
+    text-align: center;
+}
+
+.odkazy {
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.icon {
+
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+/* kdyz najedu mysi, zvetsi se ikony */
+.icon:hover {
+
+    transform: scale(1.1);
+}
