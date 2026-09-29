@@ -2,10 +2,24 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 body {
+    height: 100%;
     font-family: 'JetBrains Mono', monospace;
     background-color: #180538;
     color: #8e4dff;
+    margin: 0;
     overflow: hidden;
+
+.hlavni {
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
 }
 .binary {
     position: absolute;
