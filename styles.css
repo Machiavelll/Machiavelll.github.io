@@ -84,6 +84,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #5865f2;
+    cursor: pointer;
+
 }
 
 .avatar-wrap {
