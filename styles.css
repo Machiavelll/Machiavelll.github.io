@@ -5,7 +5,7 @@ html {
 
     height: 100%;
     margin: 0;
-    background-color: #180538;
+    background-color: #000000;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     background-color: transparent;
     color: #8e4dff;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .main {
@@ -38,25 +38,20 @@ body {
     -webkit-animation-duration: 1s;
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    color: white;
-    text-shadow: 0 0 10px #91EDFF;
+    color: #009a22;
+    text-shadow: 0 0 10px #1d9f09;
 }
-
-/*  main color: #180538 
-    second color: #320b75
-    third color: #8e4dff
-*/
 
 .nadpis {
 
-    color: #8e4dff;
+    color: #000000;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
     background:linear-gradient(
         110deg,
-        #8e4dff 40%,
-        #ffffff 50%,
-        #8e4dff 60%
+        #ffffff 40%,
+        #000000 70%,
+        #ffffff 60%
     );
 
     background-size: 200% 100%;
@@ -83,7 +78,7 @@ body {
     height: 125px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #5865f2;
+    border: 3px solid #342223;
     cursor: pointer;
 
 }
