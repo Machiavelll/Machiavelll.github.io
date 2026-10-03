@@ -118,3 +118,27 @@ class BinaryAnimation {
 }
 
 new BinaryAnimation().start();
+
+
+let bufferMiku = "";
+let bufferStop = "";
+let song = new Audio("whyMiku.webm");
+
+document.addEventListener("keydown", function(e) {
+    const letter = e.key.toLowerCase();
+
+    bufferMiku += letter;
+    bufferMiku = bufferMiku.slice(-4);
+
+    bufferStop += letter;
+    bufferStop = bufferStop.slice(-4);
+
+    if (bufferMiku === "miku") {
+        song.play();
+    }
+
+    if (bufferStop === "stop") {
+        song.pause();
+        song.currentTime = 0;
+    }
+});
