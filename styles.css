@@ -129,6 +129,17 @@ body {
     transform: scale(1.25);
 }
 
+.info-section {
+
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
 .info1 {
     position: relative;
     z-index: 1;
@@ -140,6 +151,42 @@ body {
     border-radius: 16px;
     padding: 24px;
     max-width: 200px;
-    margin: 40px auto;
     color: whitesmoke;
+    margin: 0 auto;
+}
+
+.info2 {
+
+    position: absolute;
+    top: 0;
+    left: calc(50% + 100px + 24px);
+    z-index: 1; 
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 200px;
+    color: whitesmoke;
+
+}
+
+.info3 {
+
+    position: absolute;
+    top: 0;
+    right: calc(50% + 100px + 24px);
+    z-index: 1; 
+    text-align: center;
+    background-color: rgba(1, 1, 1, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 200px;
+    color: whitesmoke;
+
 }
