@@ -142,3 +142,53 @@ document.addEventListener("keydown", function(e) {
         song.currentTime = 0;
     }
 });
+
+const narozeni = new Date(2006, 10, 28, 11, 13, 0);
+
+const el = {
+  years: document.getElementById('years'),
+  months: document.getElementById('months'),
+  days: document.getElementById('days'),
+  hours: document.getElementById('hours'),
+  minutes: document.getElementById('minutes'),
+  seconds: document.getElementById('seconds'),
+};
+
+function pad(n, width = 2) {
+  return String(n).padStart(width, '0');
+}
+
+function tick() {
+  const ted = new Date();
+
+  let years = ted.getFullYear() - narozeni.getFullYear();
+  let months = ted.getMonth() - narozeni.getMonth();
+  let days = ted.getDate() - narozeni.getDate();
+
+  if (days < 0) {
+    months -= 1;
+    const predchoziMesic = new Date(ted.getFullYear(), ted.getMonth(), 0);
+    days += predchoziMesic.getDate();
+  }
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  const diffMs = ted - narozeni;
+  const totalSeconds = Math.floor(diffMs / 1000);
+  const daySeconds = totalSeconds % 86400;
+  const hours = Math.floor(daySeconds / 3600);
+  const minutes = Math.floor((daySeconds % 3600) / 60);
+  const seconds = daySeconds % 60;
+
+  el.years.textContent = years;
+  el.months.textContent = months;
+  el.days.textContent = days;
+  el.hours.textContent = pad(hours);
+  el.minutes.textContent = pad(minutes);
+  el.seconds.textContent = pad(seconds);
+}
+
+tick();
+setInterval(tick, 1000);
